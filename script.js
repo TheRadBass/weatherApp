@@ -63,7 +63,7 @@ async function getWeather() {
   }
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=13e369673c374816a78184619241302&q=${searchBar.value}`
+      `https://api.weatherapi.com/v1/current.json?key=13e369673c374816a78184619241302&q=${searchBar.value}`
     );
     weatherData = await response.json();
     wasDataReceived = true;
