@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="temperature-scale-toggler">
+        <div id="toggler-selected-area">
+          <p id="temperature-toggler-info">C°</p>
+        </div>
+      </div>
+
+      <h1 id="header">Check the weather of (almost) any place you want.</h1>
+      <div class="search-section">
+        <input type="text" id="search-bar" />
+        <button id="search-button">Search</button>
+        <h2 id="search-status"></h2>
+      </div>
+
+      <div class="weather-data-display">
+        <div class="left-side-display">
+          <p class="display-title" id="location-title"></p>
+          <p class="display-value" id="location-name"></p>
+          <p class="display-title" id="humidity-title"></p>
+          <p class="display-value" id="humidity"></p>
+          <p class="display-title" id="wind-title"></p>
+          <p class="display-value" id="wind-speed"></p>
+        </div>
+
+        <div class="right-side-display">
+          <p id="temperature"></p>
+          <p class="display-title" id="feels-like-title"></p>
+          <p class="display-value" id="feels-like"></p>
+          <div class="condition-container">
+            <div class="condition-text">
+              <p class="display-title" id="condition-title"></p>
+              <p class="display-value" id="condition"></p>
+            </div>
+            <img src="" alt="" id="condition-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>
+        Powered by
+        <a href="https://www.weatherapi.com/" title="Free Weather API"
+          >WeatherAPI.com</a
+        >
+      </p>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>

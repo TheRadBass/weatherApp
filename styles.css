@@ -1,0 +1,206 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  height: 100vh;
+}
+
+body {
+  background-image: url('./assets/background.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: grid;
+  height: 99vh;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 98vw;
+  height: auto;
+}
+
+#header {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.search-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#temperature-scale-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 3rem;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 20px 3px rgba(190, 190, 190, 0.571);
+  transition: 1000ms;
+}
+
+#temperature-scale-toggler:hover {
+  cursor: pointer;
+}
+
+#toggler-selected-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(98, 171, 214);
+  border-radius: 0.8rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  width: 0.4rem;
+  height: 2.6rem;
+  font-size: 1.4rem;
+  background-color: rgb(20, 83, 120);
+  box-shadow: inset 0px 0px 10px 3px rgba(105, 152, 179, 0.584);
+  color: whitesmoke;
+}
+
+#toggler-selected-area:active {
+  background-color: rgb(186, 210, 224);
+}
+
+#search-bar {
+  width: 30rem;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 3px solid rgb(5, 5, 5);
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: whitesmoke;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#search-button {
+  border-radius: 0.9rem;
+  height: 2.5rem;
+  width: 7rem;
+  background-color: black;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+#search-button:hover {
+  cursor: pointer;
+  background-color: rgb(142, 216, 226);
+  color: black;
+  transition-duration: 400ms;
+}
+
+#search-status {
+  color: rgb(210, 40, 40);
+  text-align: center;
+}
+
+.weather-data-display {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.left-side-display {
+  max-width: 40%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.display-title {
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+}
+
+.display-value {
+  margin-top: 0px;
+}
+
+.right-side-display {
+  max-width: 40%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+#temperature {
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.condition-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.condition-text {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+}
+
+#condition {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#condition-icon {
+  align-self: center;
+  justify-self: flex-end;
+  display: none;
+  height: 5rem;
+  width: 5rem;
+}
+
+#footer {
+  align-self: flex-end;
+  margin-right: 2rem;
+  text-align: right;
+}
+
+#footer > p {
+  color: rgb(163, 207, 230);
+}
+
+#footer > p > a {
+  color: rgb(159, 146, 208);
+}
+
+@media only screen and (max-width: 674px) {
+  #header {
+    font-size: 1.5rem;
+  }
+
+  #search-status {
+    font-size: 1.2rem;
+  }
+
+  #temperature {
+    font-size: 2.8rem;
+  }
+
+  .display-value {
+    font-size: 1.5rem;
+  }
+
+  #search-bar {
+    max-width: 80%;
+  }
+}
